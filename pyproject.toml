@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "python-sample-poetry"
+version = "0.1.0"
+description = "python sample poetry"
+license = "MIT"
+authors = ["Rem_"]
+readme = "README.md"
+
+[tool.poetry.build]
+# generate-setup-file = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+tweepy = "^4.4.0"
+python-sample-lib = {path = "../python-sample-lib", develop = true}
+
+[tool.poetry.dev-dependencies]
+
+
+[tool.poetry.scripts]
+main = 'python_sample_poetry.main:main'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
