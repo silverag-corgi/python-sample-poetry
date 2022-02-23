@@ -12,6 +12,7 @@
 > poetry check
 > poetry update
 > poetry add [lib_name]
+> poetry add git+[repository_url]#main
 > poetry show
 > poetry show --tree
 > poetry env info
