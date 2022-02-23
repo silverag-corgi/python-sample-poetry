@@ -2,20 +2,17 @@
 name = "python-sample-poetry"
 version = "0.1.0"
 description = "python sample poetry"
-license = "MIT"
 authors = ["Rem_"]
+license = "MIT"
 readme = "README.md"
-
-[tool.poetry.build]
-# generate-setup-file = false
 
 [tool.poetry.dependencies]
 python = "^3.10"
 tweepy = "^4.4.0"
-python-sample-lib = {path = "../python-sample-lib", develop = true}
+python-sample-poetry-lib = {path = "../python-sample-poetry-lib", develop = true}
+# python-sample-poetry-lib = {path = "../python-sample-poetry-lib/dist/python-sample-poetry-lib-0.1.0.tar.gz"}
 
 [tool.poetry.dev-dependencies]
-
 
 [tool.poetry.scripts]
 main = 'python_sample_poetry.main:main'
